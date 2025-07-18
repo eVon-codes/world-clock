@@ -11,26 +11,30 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select>
-        <option value="">Select a city...</option>
-        <option value="">Accra</option>
-        <option value="">Copenhagen</option>
-        <option value="">Kogens Lyngby</option>
-      </select>
-      <div class="city" id="copenhagen">
-        <div>
-          <h2>Copenhagen 🇩🇰</h2>
-          <div class="date"></div>
-        </div>
-        <div class="time"><small>AM</small></div>
-      </div>
 
-      <div class="city" id="accra">
-        <div>
-          <h2>Accra 🇬🇭</h2>
-          <div class="date"></div>
+      <select id="city">
+        <option value="">Select a city...</option>
+        <option value="Europe/Copenhagen">Copenhagen</option>
+        <option value="Africa/Accra">Accra</option>
+        <option value="Australia/Sydney">Sydney</option>
+      </select>
+
+      <div id="cities">
+        <div class="city" id="copenhagen">
+          <div>
+            <h2>Copenhagen</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"><small>AM</small></div>
+
+        <div class="city" id="accra">
+          <div>
+            <h2>Accra</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
       </div>
     </div>
 
