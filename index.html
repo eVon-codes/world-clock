@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
@@ -15,20 +17,20 @@
         <option value="">Copenhagen</option>
         <option value="">Kogens Lyngby</option>
       </select>
-      <div class="city">
+      <div class="city" id="copenhagen">
         <div>
-          <h2>Odense 🇩🇰</h2>
-          <div class="date">July 19th, 2025</div>
+          <h2>Copenhagen 🇩🇰</h2>
+          <div class="date"></div>
         </div>
-        <div class="time">02:16:15 <small>AM</small></div>
+        <div class="time"><small>AM</small></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="accra">
         <div>
-          <h2>Kwabenya 🇬🇭</h2>
-          <div class="date">July 19th, 2025</div>
+          <h2>Accra 🇬🇭</h2>
+          <div class="date"></div>
         </div>
-        <div class="time">02:16:15 <small>AM</small></div>
+        <div class="time"><small>AM</small></div>
       </div>
     </div>
 
