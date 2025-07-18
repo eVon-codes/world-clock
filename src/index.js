@@ -1,13 +1,13 @@
-//Copenhagen
+//Tokyo
 function updateTime() {
-  let copenhagenElement = document.querySelector("#copenhagen");
-  if (copenhagenElement) {
-    let copenhagenDateElement = copenhagenElement.querySelector(".date");
-    let copenhagenTimeElement = copenhagenElement.querySelector(".time");
-    let copenhagenTime = moment().tz("Europe/Copenhagen");
+  let tokyoElement = document.querySelector("#tokyo");
+  if (tokyoElement) {
+    let tokyoDateElement = tokyoElement.querySelector(".date");
+    let tokyoTimeElement = tokyoElement.querySelector(".time");
+    let tokyoTime = moment().tz("Europe/Copenhagen");
 
-    copenhagenDateElement.innerHTML = copenhagenTime.format("MMMM Do YYYY");
-    copenhagenTimeElement.innerHTML = copenhagenTime.format(
+    tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
+    tokyoTimeElement.innerHTML = tokyoTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
